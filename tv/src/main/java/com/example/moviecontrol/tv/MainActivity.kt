@@ -71,6 +71,8 @@ fun TvControlApp() {
         "avengers" -> "🦸‍♂️"
         "spider-man" -> "🕷️"
         "toy story" -> "🤠"
+        "badman" -> "🦇"
+        "caperuza" -> "❤️"
         else -> "🎬"
     }
 
