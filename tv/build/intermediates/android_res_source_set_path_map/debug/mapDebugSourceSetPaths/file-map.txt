@@ -1,0 +1,9 @@
+com.example.moviecontrol.tv-pngs-0 C:\Users\Steven\AndroidStudioProjects\MovieControl\tv\build\generated\res\pngs\debug
+com.example.moviecontrol.tv-res-1 C:\Users\Steven\AndroidStudioProjects\MovieControl\tv\build\generated\res\processDebugGoogleServices
+com.example.moviecontrol.tv-updated_navigation_xml-2 C:\Users\Steven\AndroidStudioProjects\MovieControl\tv\build\generated\updated_navigation_xml\debug
+com.example.moviecontrol.tv-packageDebugResources-3 C:\Users\Steven\AndroidStudioProjects\MovieControl\tv\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.example.moviecontrol.tv-packageDebugResources-4 C:\Users\Steven\AndroidStudioProjects\MovieControl\tv\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.example.moviecontrol.tv-debug-5 C:\Users\Steven\AndroidStudioProjects\MovieControl\tv\build\intermediates\merged_res\debug\mergeDebugResources
+com.example.moviecontrol.tv-debug-6 C:\Users\Steven\AndroidStudioProjects\MovieControl\tv\src\debug\res
+com.example.moviecontrol.tv-main-7 C:\Users\Steven\AndroidStudioProjects\MovieControl\tv\src\main\res
+gradleHome-0 C:\Users\Steven\.gradle

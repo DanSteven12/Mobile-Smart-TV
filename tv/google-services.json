@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1013837274563",
+    "project_id": "armando-84cf1",
+    "storage_bucket": "armando-84cf1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1013837274563:android:1bdf9f26e3a40f4f37b176",
+        "android_client_info": {
+          "package_name": "com.example.moviecontrol"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGEh5X0DdNKFDKUYGUDBxGRVrIcC5CWTo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1013837274563:android:5314a7c0f174088c37b176",
+        "android_client_info": {
+          "package_name": "com.example.moviecontrol.tv"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGEh5X0DdNKFDKUYGUDBxGRVrIcC5CWTo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
