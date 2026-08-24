@@ -28,17 +28,17 @@ class MainActivity : ComponentActivity() {
         setContent {
             MaterialTheme(
                 colorScheme = darkColorScheme(
-                    background = Color(0xFF120C08),
-                    surface = Color(0xFF1D140E),
-                    primary = Color(0xFFF97316),
+                    background = Color(0xFF0B0F19),
+                    surface = Color(0xFF161F30),
+                    primary = Color(0xFF6366F1),
                     onPrimary = Color.White,
-                    onBackground = Color(0xFFFFFBFE),
-                    onSurface = Color(0xFFFED7AA)
+                    onBackground = Color(0xFFF8FAFC),
+                    onSurface = Color(0xFFE2E8F0)
                 )
             ) {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
-                    color = Color(0xFF120C08)
+                    color = Color(0xFF0B0F19)
                 ) {
                     MovieControlApp()
                 }
@@ -99,7 +99,7 @@ fun MovieControlApp() {
             .fillMaxSize()
             .background(
                 Brush.verticalGradient(
-                    colors = listOf(Color(0xFF1A120B), Color(0xFF0D0907))
+                    colors = listOf(Color(0xFF0F172A), Color(0xFF070A12))
                 )
             )
             .statusBarsPadding()
@@ -128,9 +128,9 @@ fun MovieControlApp() {
             }
 
             Surface(
-                color = Color(0xFF2A1E17),
+                color = Color(0xFF1E293B),
                 shape = RoundedCornerShape(20.dp),
-                border = BorderStroke(1.dp, Color(0xFF453026))
+                border = BorderStroke(1.dp, Color(0xFF334155))
             ) {
                 Row(
                     modifier = Modifier.padding(horizontal = 10.dp, vertical = 4.dp),
@@ -157,8 +157,8 @@ fun MovieControlApp() {
         Card(
             modifier = Modifier.fillMaxWidth(),
             shape = RoundedCornerShape(22.dp),
-            colors = CardDefaults.cardColors(containerColor = Color(0xFF2A1E17)),
-            border = BorderStroke(1.dp, Color(0xFF453026).copy(alpha = 0.6f)),
+            colors = CardDefaults.cardColors(containerColor = Color(0xFF1E293B)),
+            border = BorderStroke(1.dp, Color(0xFF334155).copy(alpha = 0.6f)),
             elevation = CardDefaults.cardElevation(defaultElevation = 8.dp)
         ) {
             Column(
@@ -167,8 +167,8 @@ fun MovieControlApp() {
                     .background(
                         Brush.radialGradient(
                             colors = listOf(
-                                Color(0xFF453026),
-                                Color(0xFF2A1E17)
+                                Color(0xFF2E3D59),
+                                Color(0xFF1E293B)
                             ),
                             radius = 900f
                         )
@@ -186,7 +186,7 @@ fun MovieControlApp() {
                         fontSize = 11.sp,
                         fontWeight = FontWeight.ExtraBold,
                         letterSpacing = 2.sp,
-                        color = Color(0xFFFB923C)
+                        color = Color(0xFF818CF8)
                     )
                 }
 
@@ -199,15 +199,15 @@ fun MovieControlApp() {
 
                 if (movie.genero.isNotBlank()) {
                     Surface(
-                        color = Color(0xFF7C2D12).copy(alpha = 0.6f),
+                        color = Color(0xFF312E81).copy(alpha = 0.6f),
                         shape = RoundedCornerShape(8.dp),
-                        border = BorderStroke(1.dp, Color(0xFFF97316).copy(alpha = 0.5f))
+                        border = BorderStroke(1.dp, Color(0xFF6366F1).copy(alpha = 0.5f))
                     ) {
                         Text(
                             text = movie.genero.uppercase(),
                             fontSize = 11.sp,
                             fontWeight = FontWeight.SemiBold,
-                            color = Color(0xFFFFD8A8),
+                            color = Color(0xFFA5B4FC),
                             modifier = Modifier.padding(horizontal = 8.dp, vertical = 4.dp)
                         )
                     }
@@ -220,7 +220,7 @@ fun MovieControlApp() {
                     color = Color(0xFF94A3B8)
                 )
 
-                HorizontalDivider(color = Color(0xFF453026).copy(alpha = 0.5f), thickness = 1.dp)
+                HorizontalDivider(color = Color(0xFF334155).copy(alpha = 0.5f), thickness = 1.dp)
 
                 val (colorEstado, fondoEstado, textoEstado) = when (movie.estado.lowercase()) {
                     "reproduciendo" -> Triple(Color(0xFF10B981), Color(0xFF064E3B), "▶ REPRODUCIENDO")
@@ -277,11 +277,11 @@ fun MovieControlApp() {
                     .height(50.dp),
                 shape = RoundedCornerShape(14.dp),
                 colors = ButtonDefaults.buttonColors(
-                    containerColor = if (movie.estado.equals("reproduciendo", true)) Color(0xFF10B981) else Color(0xFF2A1E17)
+                    containerColor = if (movie.estado.equals("reproduciendo", true)) Color(0xFF10B981) else Color(0xFF1E293B)
                 ),
                 border = BorderStroke(
                     1.dp,
-                    if (movie.estado.equals("reproduciendo", true)) Color(0xFF34D399) else Color(0xFF453026)
+                    if (movie.estado.equals("reproduciendo", true)) Color(0xFF34D399) else Color(0xFF334155)
                 )
             ) {
                 Text(
@@ -299,11 +299,11 @@ fun MovieControlApp() {
                     .height(50.dp),
                 shape = RoundedCornerShape(14.dp),
                 colors = ButtonDefaults.buttonColors(
-                    containerColor = if (movie.estado.equals("pausado", true)) Color(0xFFF59E0B) else Color(0xFF2A1E17)
+                    containerColor = if (movie.estado.equals("pausado", true)) Color(0xFFF59E0B) else Color(0xFF1E293B)
                 ),
                 border = BorderStroke(
                     1.dp,
-                    if (movie.estado.equals("pausado", true)) Color(0xFFFBBF24) else Color(0xFF453026)
+                    if (movie.estado.equals("pausado", true)) Color(0xFFFBBF24) else Color(0xFF334155)
                 )
             ) {
                 Text(
@@ -321,11 +321,11 @@ fun MovieControlApp() {
                     .height(50.dp),
                 shape = RoundedCornerShape(14.dp),
                 colors = ButtonDefaults.buttonColors(
-                    containerColor = if (movie.estado.equals("detenido", true)) Color(0xFFEF4444) else Color(0xFF2A1E17)
+                    containerColor = if (movie.estado.equals("detenido", true)) Color(0xFFEF4444) else Color(0xFF1E293B)
                 ),
                 border = BorderStroke(
                     1.dp,
-                    if (movie.estado.equals("detenido", true)) Color(0xFFF87171) else Color(0xFF453026)
+                    if (movie.estado.equals("detenido", true)) Color(0xFFF87171) else Color(0xFF334155)
                 )
             ) {
                 Text(
@@ -364,11 +364,11 @@ fun MovieControlApp() {
                         },
                     shape = RoundedCornerShape(16.dp),
                     colors = CardDefaults.cardColors(
-                        containerColor = if (isSelected) Color(0xFF2A1E17) else Color(0xFF1A120B)
+                        containerColor = if (isSelected) Color(0xFF1E293B) else Color(0xFF131B2A)
                     ),
                     border = BorderStroke(
                         width = if (isSelected) 2.dp else 1.dp,
-                        color = if (isSelected) Color(0xFFF97316) else Color(0xFF2A1E17)
+                        color = if (isSelected) Color(0xFF6366F1) else Color(0xFF1E293B)
                     )
                 ) {
                     Row(
@@ -381,7 +381,7 @@ fun MovieControlApp() {
                         Surface(
                             modifier = Modifier.size(46.dp),
                             shape = RoundedCornerShape(12.dp),
-                            color = if (isSelected) Color(0xFFEA580C).copy(alpha = 0.2f) else Color(0xFF2A1E17)
+                            color = if (isSelected) Color(0xFF4F46E5).copy(alpha = 0.2f) else Color(0xFF1E293B)
                         ) {
                             Box(contentAlignment = Alignment.Center) {
                                 Text(text = item.icon, fontSize = 22.sp)
@@ -405,7 +405,7 @@ fun MovieControlApp() {
 
                         if (isSelected) {
                             Surface(
-                                color = Color(0xFFEA580C),
+                                color = Color(0xFF4F46E5),
                                 shape = RoundedCornerShape(8.dp)
                             ) {
                                 Text(
